@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoseInventory", "RoseInventory\RoseInventory.csproj", "{699D776E-86F3-4F44-9C48-236B708B30D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoseInventory.Test", "RoseInventory.Test\RoseInventory.Test.csproj", "{8DB4AACA-BF0E-46FC-80BD-7A92F440672B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{699D776E-86F3-4F44-9C48-236B708B30D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{699D776E-86F3-4F44-9C48-236B708B30D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{699D776E-86F3-4F44-9C48-236B708B30D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{699D776E-86F3-4F44-9C48-236B708B30D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DB4AACA-BF0E-46FC-80BD-7A92F440672B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DB4AACA-BF0E-46FC-80BD-7A92F440672B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DB4AACA-BF0E-46FC-80BD-7A92F440672B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DB4AACA-BF0E-46FC-80BD-7A92F440672B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
