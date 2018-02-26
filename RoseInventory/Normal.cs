@@ -16,6 +16,7 @@ namespace RoseInventory
             }
         }
 
+        //Sellin is updated before the quality is
         public override void UpdateQuality()
         {
             if (SellIn >= 0)

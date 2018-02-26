@@ -16,13 +16,14 @@ namespace RoseInventory
             }
         }
 
+        //Sellin is updated before the quality is
         public override void UpdateQuality()
         {
-            if (SellIn < 10 && SellIn >= 5)
+            if (SellIn <= 10 && SellIn > 5)
             {
                 Quality = Quality + 2;
             }
-            else if (SellIn < 5 && SellIn >= 0 )
+            else if (SellIn <= 5 && SellIn >= 0 )
             {
                 Quality = Quality + 3;
             }
