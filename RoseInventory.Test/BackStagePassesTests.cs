@@ -10,7 +10,9 @@ namespace RoseInventory.Test
     [TestFixture]
     public class BackStagePassesTests
     {
+        //Sellin is updated before the quality is
         [TestCase(15, 5, 14, 5, TestName = "Back Stage greater than 10")]
+        [TestCase(11, 5, 10, 7, TestName = "Back Stage 11")]
         [TestCase(10, 5, 9, 7, TestName = "Back Stage 10")]
         [TestCase(8, 5, 7, 7, TestName = "Back Stage between 5 and 10")]
         [TestCase(5, 5, 4, 8, TestName = "Back Stage 5")]
