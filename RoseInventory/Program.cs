@@ -21,22 +21,6 @@ namespace RoseInventory
                     Console.WriteLine(item.ItemType + ' ' + item.SellIn + ' ' + item.Quality); 
             }
             Console.ReadLine();
-
-
-            //Sulfuras sulf = new Sulfuras() {Quality = 5, SellIn = 11  };
-
-            //sulf.MoveForwardOneDay();
-            //sulf.MoveForwardOneDay();
-            //Console.WriteLine("Quality: " + sulf.Quality + " - SellIn: " + sulf.SellIn);
-
-            //Normal norm = new Normal() { Quality = 6, SellIn = -2 };
-
-            //norm.MoveForwardOneDay();
-
-            //Console.WriteLine("Quality: " + norm.Quality + " - SellIn: " + norm.SellIn);
-
-            //Console.ReadLine();
-
         }
     }
 }

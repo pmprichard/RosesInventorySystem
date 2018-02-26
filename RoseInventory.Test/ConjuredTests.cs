@@ -10,8 +10,9 @@ namespace RoseInventory.Test
     [TestFixture]
     public class ConjuredTests
     {
-        [TestCase(4, 5, 3, 6)]
-        public void Conjured(int startingSellIn, int startingQuality, int resultSellIn, int resultQuality)
+        [TestCase(4, 5, 3, 3, TestName = "Conjured Positive SellIn")]
+        [TestCase(-2, 5, -3, 1, TestName = "Conjured Negative SellIn")]
+        public void MoveForwardOneDay(int startingSellIn, int startingQuality, int resultSellIn, int resultQuality)
         {
             Conjured conjured = new Conjured() { SellIn = startingSellIn, Quality = startingQuality };
             conjured.MoveForwardOneDay();

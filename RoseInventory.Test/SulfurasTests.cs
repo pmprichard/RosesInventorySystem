@@ -10,8 +10,10 @@ namespace RoseInventory.Test
     [TestFixture]
     public class SulfurasTests
     {
-        [TestCase(4, 5, 3, 6)]
-        public void Sulfuras(int startingSellIn, int startingQuality, int resultSellIn, int resultQuality)
+
+        [TestCase(4, 5, 4, 5, TestName = "Conjured Positive SellIn")]
+        [TestCase(-2, 5, -2, 5, TestName = "Conjured Negative SellIn")]
+        public void MoveForwardOneDay(int startingSellIn, int startingQuality, int resultSellIn, int resultQuality)
         {
             Sulfuras sulfuras = new Sulfuras() { SellIn = startingSellIn, Quality = startingQuality };
             sulfuras.MoveForwardOneDay();

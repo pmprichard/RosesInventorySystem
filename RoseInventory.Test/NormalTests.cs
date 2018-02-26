@@ -10,8 +10,10 @@ namespace RoseInventory.Test
     [TestFixture]
     public class NormalTests
     {
-        [TestCase(4, 5, 3, 6)]
-        public void Normal(int startingSellIn, int startingQuality, int resultSellIn, int resultQuality)
+
+        [TestCase(4, 5, 3, 4, TestName = "Normal Positive SellIn")]
+        [TestCase(-2, 5, -3, 3, TestName = "Normal Negative SellIn")]
+        public void MoveForwardOneDay(int startingSellIn, int startingQuality, int resultSellIn, int resultQuality)
         {
             Normal normal = new Normal() { SellIn = startingSellIn, Quality = startingQuality };
             normal.MoveForwardOneDay();

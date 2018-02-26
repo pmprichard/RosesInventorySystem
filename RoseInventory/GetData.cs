@@ -11,7 +11,7 @@ namespace RoseInventory
     {
         public static List<Item> parseFile()
         {
-            var reader = new StreamReader(File.OpenRead(@"C:\Input.csv"));
+            var reader = new StreamReader(File.OpenRead(@"..\..\Input.csv"));
             List<Item> items = new List<Item>();
 
             while (!reader.EndOfStream)

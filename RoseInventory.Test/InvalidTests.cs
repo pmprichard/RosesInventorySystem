@@ -10,17 +10,14 @@ namespace RoseInventory.Test
     [TestFixture]
     public class InvalidTests
     {
-        [TestCase(4, 5, 3, 6)]
-        public void Invalid(int startingSellIn, int startingQuality, int resultSellIn, int resultQuality)
+        [TestCase("NO SUCH ITEM", TestName = "Invalid Item type check")]
+        public void MoveForwardOneDay(string expected)
         {
-            Invalid invalid = new Invalid() { SellIn = startingSellIn, Quality = startingQuality };
+            Invalid invalid = new Invalid();
             invalid.MoveForwardOneDay();
 
-            int expectedQuality = invalid.Quality;
-            int sellin = invalid.SellIn;
-
-            Assert.That(sellin, Is.EqualTo(resultSellIn));
-            Assert.That(expectedQuality, Is.EqualTo(resultQuality));
+            string actual = invalid.ItemType;
+            Assert.That(actual, Is.EqualTo(expected));
         }
     }
 }
